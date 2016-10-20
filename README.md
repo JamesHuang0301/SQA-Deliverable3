@@ -1,14 +1,14 @@
 #IS2545 - DELIVERABLE 3: Web Test
 ##xih55@pitt.edu
 
-    Issues when coding on this project:
+    1. Issues when coding on this project:
     
         1. Not using wait.unitl correctly at the beginning.
         3. IP was blocked when I was testing login story.
         3. Elements can not be catched sometimes due to complicated suitations on web page.
         4. It takes time thinking about stories and scenarios.
   
-    2.Test Design
+    2. Test Design
         3 stories and 9 tests.
         
         Story 1:
