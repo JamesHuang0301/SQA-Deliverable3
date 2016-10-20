@@ -9,7 +9,8 @@
         4. It takes time thinking about stories and scenarios.
   
     2. Test Design
-        3 stories and 9 tests.
+    
+        There are 3 stories and 9 tests.
         
         Story 1:
         Cart items
