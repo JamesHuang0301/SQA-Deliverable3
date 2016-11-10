@@ -13,55 +13,62 @@
         There are 3 stories and 9 tests.
         
         Story 1:
-        Cart items
+        User have added items to Cart and then update the quantity of it 
         
         Scenario 1:
-        I add a iPhone5 in my cart
-        Click go to checkout
-        Change Quantity to 6 and click update, Total will be 72
+        Given I add a iPhone5 in my cart
+        And Click go to checkout
+        When Change Quantity to 6 and click update
+        Then Total will be 72
         
         Scenario 2:        
-        I add a iphone5 to my cart
-        Click go to checkout
-        I remove it so that cart should be empty
+        Given I add a iphone5 to my cart
+        And Click go to checkout
+        When I remove it 
+        Then cart should be empty
         
         Scenario 3:
-        I add a iPhone5 in my cart
-        Click continue shopping
-        I should stay at the page
+        Given I add a iPhone5 in my cart
+        When Click continue shopping
+        Then I should stay at the page
         
         
         Story 2:
-        Log in 
+        Users try to log in with username and password
         
         Scenario 1:
-        Login in with nothing
-        User will not be allowed to log in
+        Given typing in with nothing
+        When click log in button
+        Then User will not be allowed to log in
         
         Scenario 2:
-        Login in with invalid password and valid username
-        User will not be allowed to log in
-        return nothing
+        Given Login in with invalid password and valid username
+        When click log in button
+        Then User will not be allowed to log in
         
         Scenario 3:
-        Login in with invalid username and valid password
-        User will not be allowed to log in
+        Given Login in with invalid username and valid password
+        When click log in button
+        Then User will not be allowed to log in
         
         
         Story 3:
-        Search words
+        User try to search some items he/she wants to buy
         
         Scenario 1:
-        Search any words
-        There will be no result
+        Given Search any words
+        When click search button
+        Then there will be no result
         
         Scenario 2:
-        Search iphone
-        There will be 5 results
+        Given Search iphone
+        When click search button
+        Then there will be 5 results
         
         Scenario 3:
-        Search iphone
-        There will be one more results
+        Given Search iphone
+        When click search button
+        Then there will be one more results
         
         
     All results are in the folder "Results".
